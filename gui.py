@@ -6,7 +6,6 @@ import numpy as np
 url="https://raw.githubusercontent.com/cakirogl/uhp_frc_facade_energy/main/data_4features.xlsx"
 df = pd.read_excel(url, header=0, sheet_name="Sheet1")
 #Total heating and cooling energy use - GJ will be predicted 
-df.drop(df.columns[[0,1,42,43,44, 45, 46, 48]], inplace=True, axis=1)
 x = df[df.columns[:-1]]
 y = df[df.columns[-1]]
 
