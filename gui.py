@@ -23,4 +23,4 @@ model.fit(x,y)
 oc=st.container()
 new_sample = np.array([[TFA, WF,AAT, OL]], dtype=object)
 with ic2:
-    st.write(f"**blue[Total energy consumption [GJ]: {model.predict(new_sample)[0]:.2f}]**")
+    st.write(f":blue[**Total energy consumption [GJ]: **{model.predict(new_sample)[0]:.2f}**]**")
