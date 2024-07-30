@@ -12,7 +12,7 @@ y = df[df.columns[-1]]
 ic=st.container()
 ic1,ic2 = ic.columns(2)
 with ic1:
-    TFA = st.number_input("**Total floor area [ft^2]**", min_value=2500.0, max_value=498600.0, step=24800.0, value=90735.0);
+    TFA = st.number_input("**Total floor area [$ft^2$]**", min_value=2500.0, max_value=498600.0, step=24800.0, value=90735.0);
     WF = st.number_input("**Window fraction**", min_value=0.07, max_value=0.4, step=0.02, value=0.22)
 with ic2:
     AAT = st.number_input("**Annual average temperature [F]**", min_value=27.0,max_value=80.0, step=2.5, value=57.0)
