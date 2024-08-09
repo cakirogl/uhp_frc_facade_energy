@@ -3,8 +3,9 @@ from xgboost.sklearn import XGBRegressor
 import pandas as pd
 import numpy as np
 
-url="https://raw.githubusercontent.com/cakirogl/uhp_frc_facade_energy/main/data_4features.xlsx"
-df = pd.read_excel(url, header=0, sheet_name="Sheet1")
+url="https://raw.githubusercontent.com/cakirogl/uhp_frc_facade_energy/main/data_4features.csv"
+#df = pd.read_excel(url, header=0, sheet_name="Sheet1")
+df = pd.read_csv(url, header=0)
 #Total heating and cooling energy use - GJ will be predicted 
 x = df[df.columns[:-1]]
 y = df[df.columns[-1]]
